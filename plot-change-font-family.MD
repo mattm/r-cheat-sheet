@@ -33,9 +33,9 @@ We can add these to the `.Rprofile` file in user root like so:
 .Last <- function() {}
 ```
 
-Then we can type `.define.fonts()` after RStudio loads to set the fonts to Proxima Nova.
+Then we can type `.define.fonts()` after RStudio loads to set the plot font to Proxima Nova.
 
-Note that you can't add the function call to `.First` because RStudio will complain about `quartzFonts` not being a function:
+Note that you unfortunately can't add the function call to `.First` because RStudio will complain about `quartzFonts` not being a function:
 
 ```
 Error in .First() : could not find function "quartzFonts"
