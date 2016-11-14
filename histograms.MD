@@ -9,9 +9,9 @@ x <- c( 10, 30, 5, 23, 24, 25, 42 )
 hist( x, 
 	breaks = seq( 0, 100, by = 5 ), 
 	col = "lightgreen", 
-	main = "The % of who saw plans and pricing who then started the NUX",
-	xlab = "Conversion Rate", 
-	ylab = "Number of Guesses" )
+	main = "A chart title",
+	xlab = "X-Axis Title", 
+	ylab = "Y-Axis Title" )
 ```
 
 ## Adding a vertical line at a specific value
