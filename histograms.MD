@@ -1,5 +1,4 @@
 # Histograms
-
 The generic function `hist` computes a histogram of the given data values.
 
 ## A simple example
@@ -9,9 +8,9 @@ x <- c( 10, 30, 5, 23, 24, 25, 42 )
 hist( x,
 	breaks = seq( 0, 100, by = 5 ),
 	col = "lightgreen",
-	main = "A chart title",
-	xlab = "X-Axis Title",
-	ylab = "Y-Axis Title" )
+	main = "% of users who start NUX who saw the plans and pricing beforehand",
+	xlab = "Number of Guesses",
+	ylab = "Conversion Rate" )
 ```
 
 ## Adding a vertical line at a specific value

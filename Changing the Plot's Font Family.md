@@ -10,7 +10,7 @@ The argument is "a character vector containing the four PostScript font names fo
 
 The names are from Font Book:
 
-![Font Book](/images/fontbook.png)
+Font Book
 
 ## Setting the plot's font family to the new font
 
@@ -19,7 +19,6 @@ par( family = "proxima.nova" )
 ```
 
 ## Creating a shortcut
-
 We can add these to the `.Rprofile` file in user root like so:
 
 ```

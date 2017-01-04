@@ -1,5 +1,4 @@
-## Creating shortcuts
-
+## Creating Shortcuts
 We can add functions to the `.Rprofile` file in user root like so:
 
 ```
@@ -14,3 +13,5 @@ We can add functions to the `.Rprofile` file in user root like so:
 ```
 
 These functions - which have to come before `.First` and `.Last` - will then be available after RStudio loads.
+
+Test
