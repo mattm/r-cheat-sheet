@@ -4,10 +4,18 @@
 install.packages("ggplot2")
 ```
 
+You need to use quotes here.
+
 # Including a package
 
 ```
 library("ggplot2")
+```
+
+The quotes are optional so you can also do (which is the convention):
+
+```
+library(ggplot2)
 ```
 
 # Checking R Version

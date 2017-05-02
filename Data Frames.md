@@ -33,6 +33,32 @@ That's **rows** then **columns**:
 [1] 3 2
 ```
 
+## Returning the column names
+```
+> colnames(d)
+[1] "kids" "ages"
+```
+
+## Viewing a summary of the data
+```
+> summary(d)
+     kids        ages       
+ Jack  :1   Min.   : 4.000  
+ Jill  :1   1st Qu.: 7.000  
+ Johnny:1   Median :10.000  
+            Mean   : 8.667  
+            3rd Qu.:11.000  
+            Max.   :12.000 
+```
+
+## Viewing the structure of the data
+```
+> str(d)
+'data.frame':	3 obs. of  2 variables:
+ $ kids: Factor w/ 3 levels "Jack","Jill",..: 1 2 3
+ $ ages: num  12 10 4
+```
+
 ## Returning the values of a data frame component
 Just like you would a list:
 
@@ -143,6 +169,22 @@ With dplyr's `select`:
 ```
 > select(housing, State, Home.Value)
 ```
+
+## Removing a column
+With `select`:
+
+```
+housing <- select(housing, -State)
+```
+
+## Renaming a column
+With dplyr's `rename`:
+
+```
+> rename(housing, State.Name = State)
+```
+
+Note that `State.Name` is the _new_ name.
 
 ## Extract distinct (unique) rows
 With `unique`:

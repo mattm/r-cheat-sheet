@@ -7,6 +7,13 @@
 [1] "1985-05-08 14:00:00 UTC"
 ```
 
+or
+
+```
+> strptime("2017-02-09", format="%Y-%m-%d", tz = "UTC")
+[1] "2017-02-09 UTC"
+```
+
 ## Converting a Unix timestamp to a time
 Using `as.Date`:
 

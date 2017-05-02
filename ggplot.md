@@ -94,3 +94,38 @@ Instead of `geom_point()`, we could have used another geometric object like `geo
 df <- data.frame(x = seq(1:4),y = c(4.2, 10, 29.5))
 > ggplot(data = df, aes(x = x, y = y, group = 1)) + geom_line() + geom_point()
 ```
+
+### Stacked bar chart
+
+```
+g <- ggplot(data, aes(x = expiry_month, y = quantity, fill = auto_renew))
+g <- g + geom_bar(stat = "identity")
+```
+
+## Customizing the chart
+
+### Adding a title
+
+```
+ggtitle("Sign Ups by Date and Vertical")
+```
+
+### Setting the X and Y axis labels
+
+```
+labs(x = "Date", y = "Vertical")
+```
+
+### Adding a margin around the chart
+
+```
+theme(plot.margin = unit(c(1, 1, 1, 1), "cm"))
+```
+
+### Formatting the y axis values
+
+```
+library(scales)
+scale_y_continuous(labels = comma)
+```
+

@@ -15,16 +15,16 @@ Font Book
 ## Setting the plot's font family to the new font
 
 ```
-par( family = "proxima.nova" )
+par(family = "proxima.nova")
 ```
 
 ## Creating a shortcut
 We can add these to the `.Rprofile` file in user root like so:
 
 ```
-.define.fonts <- function () {
-	quartzFonts( proxima.nova = c( "Proxima Nova Regular", "Proxima Nova Bold", "Proxima Nova Regular Italic", "Proxima Nova Bold Italic" ) )
-	par( family = "proxima.nova" )
+.define.fonts <- function() {
+	quartzFonts(proxima.nova = c( "Proxima Nova Regular", "Proxima Nova Bold", "Proxima Nova Regular Italic", "Proxima Nova Bold Italic"))
+	par(family = "proxima.nova")
 }
 
 .First <- function() {}

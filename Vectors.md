@@ -21,43 +21,49 @@ The concatenate function, `c`, flattens vectors:
 ```
 
 Note that `NULL` values get removed:
-
-> x <- c(NULL, 4)  
-> x  
-> [1] 4```  
+```
+> x <- c(NULL, 4)
+> x
+> [1] 4
+```
 
 ## Accessing elements in a vector
-
 One value:
 
-```> x[1]
-> [1] 88```
+```
+> x[1]
+> [1] 88
+```
 
 Multiple sequential values:
 
-```> x[1:2]
-> [1] 88 5```  
+```
+> x[1:2]
+> [1] 88 5
+```
+
 Multiple non-sequential values:
 
-```> x[c(1, 3)]
-> [1] 88 12```
+```
+> x[c(1, 3)]
+> [1] 88 12
+```
 
 ## Excluding elements from a vector
-
 Use negative indeces:
 
-```> x[-1]
-> [1] 5 12 13  
+```
+> x[-1]
+> [1] 5 12 13
+```
 
 ## Determining the length of a vector
-
 ```
 > length(x)
 [1] 4
 ```
 
 ## All elements except the last
-
 ```
 > x[1:length(x) - 1]
 [1] 88  5 12
@@ -69,8 +75,9 @@ Functions will be applied element-wise:
 ```
 > x <- c(1, 2, 4) + c(5, 0, -1)
 [1] 6 2 3
-```## Sequences
+```
 
+## Sequences
 ```
 > seq(10)
  [1]  1  2  3  4  5  6  7  8  9 10
@@ -87,14 +94,12 @@ Functions will be applied element-wise:
 ```
 
 ## Generating a vector with repeating elements
-
 ```
 > rep(5, 3)
 [1] 5 5 5
 ```
 
 ## Any and all
-
 ```
 > x <- 1:10
 > any(x > 8)
@@ -108,7 +113,6 @@ Functions will be applied element-wise:
 ```
 
 ## Removing NA values
-
 ```
 > x <- c(4, NA, 6)
 > x[!is.na(x)]
@@ -133,7 +137,6 @@ Remember that scalars are actually just single-element vectors:
 ```
 
 ## Filtering
-
 ```
 > x <- 1:3
 > x[c(TRUE, FALSE, TRUE)]
